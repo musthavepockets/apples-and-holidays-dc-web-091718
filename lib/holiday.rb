@@ -54,7 +54,8 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   
   #merge(other_hash){|key, oldval, newval| block} → new_hash
-  merge()
+  holiday_hash.merge(Hash.new){|season, value, value.string| do 
+    season.string
   
   
   
