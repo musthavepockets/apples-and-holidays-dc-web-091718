@@ -54,7 +54,7 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   string_and_split = Proc.new {key.to_s.split}
   holiday_hash.each do |key, value|
-    key.string_and_split(&capitalize!)
+    key.string_and_split
     
     binding.pry
   #holiday_hash.each do |season, holiday|
