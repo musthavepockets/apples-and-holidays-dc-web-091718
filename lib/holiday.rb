@@ -54,11 +54,11 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   
   h.default_proc = Proc.new {
-  holiday_hash.each do |season, holiday|
-    season.to_s.capitalize!
+  #holiday_hash.each do |season, holiday|
+    #season.to_s.capitalize!
     
-    holiday_strings = holiday.to_s.split
-    holiday_strings.capitalize!.join
+    #holiday_strings = holiday.to_s.split
+    #holiday_strings.capitalize!.join
     
     
     puts holiday_hash
