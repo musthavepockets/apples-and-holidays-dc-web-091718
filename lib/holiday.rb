@@ -73,7 +73,7 @@ def all_holidays_with_bbq(holiday_hash)
       while (supplies).include?("BBQ") == true
         
         bbq_holiday << day
-        binding.pry
+        
       end
       
     end
