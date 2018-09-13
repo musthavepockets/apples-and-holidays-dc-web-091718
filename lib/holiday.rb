@@ -52,8 +52,8 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-  
-  h.default_proc = Proc.new {
+  holiday_hash.each do |season, holiday|
+    h.default_proc = Proc.new {season.to_s.capitalize!}
   #holiday_hash.each do |season, holiday|
     #season.to_s.capitalize!
     
