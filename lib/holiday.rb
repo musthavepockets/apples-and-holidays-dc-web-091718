@@ -53,7 +53,7 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   string_and_split = Proc.new {key.to_s.split}
-  new_holiday_hash = do |key, value|
+  new_holiday_hash = Hash.new do |key, value|
     key(&string_and_split)
     
     binding.pry
