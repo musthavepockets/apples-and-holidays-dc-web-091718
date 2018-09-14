@@ -55,7 +55,7 @@ def all_supplies_in_holidays(holiday_hash)
   
   holiday_hash.each do |season, day|
     season_strings = season.to_s.split
-      day.each do |holiday, extras|
+      day.each do |holiday, extras| holiday
         holiday_strings = holiday.to_s.split
       end
       #season_strings.each do |s_finals|
