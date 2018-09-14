@@ -56,8 +56,10 @@ def all_supplies_in_holidays(holiday_hash)
   string_split = Proc.new {.to_s.split}
   cap_join = Proc.new {.capitalize!.join}
   holiday_hash.each do |key, value1, value2|
-    key.string_split(&cap_join): value1.string_split(&cap_join)
-    holiday_hash
+    puts key.string_split(&cap_join): 
+          value1.string_split(&cap_join):
+            value2
+    
   
   #merge(other_hash){|key, oldval, newval| block} → new_hash
   #holiday_hash.merge(Hash.new){|season, value, value.string| do 
