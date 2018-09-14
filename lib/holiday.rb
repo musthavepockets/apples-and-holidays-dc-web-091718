@@ -56,7 +56,7 @@ def all_supplies_in_holidays(holiday_hash)
   #merge(other_hash){|key, oldval, newval| block} → new_hash
   holiday_hash.merge(Hash.new){|season, value, value.string| do 
     season.string
-  
+  end
   
   
   #string_and_split = Proc.new {key.to_s.split}
