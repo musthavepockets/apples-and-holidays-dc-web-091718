@@ -53,10 +53,13 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   
-  string_split = Proc.new {obj.to_s.split}
-  cap_join = Proc.new {obj.capitalize!.join}
-  holiday_hash.each do |key, value1, value2|
-    puts #{key.string_split(&cap_join)}: 
+  holiday_hash.each do |season, day|
+    season.
+  
+  #string_split = Proc.new {obj.to_s.split}
+  #cap_join = Proc.new {obj.capitalize!.join}
+  #holiday_hash.each do |key, value1, value2|
+    #puts #{key.string_split(&cap_join)}: 
           #{value1.string_split(&cap_join)}:
             #{value2}
     
