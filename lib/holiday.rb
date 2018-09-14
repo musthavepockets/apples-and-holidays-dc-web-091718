@@ -53,7 +53,11 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   
-  
+  string_split = Proc.new {.to_s.split}
+  cap_join = Proc.new {.capitalize!.join}
+  holiday_hash.each do |key, value|
+    key.string_split(&cap_join): value.string_split(&cap_join)
+    holiday_hash
   
   #merge(other_hash){|key, oldval, newval| block} → new_hash
   #holiday_hash.merge(Hash.new){|season, value, value.string| do 
@@ -65,7 +69,7 @@ def all_supplies_in_holidays(holiday_hash)
   #new_holiday_hash = Hash.new do |key, value|
     #key{string_and_split}
     
-    binding.pry
+    
   #holiday_hash.each do |season, holiday|
     #season.to_s.capitalize!
     
