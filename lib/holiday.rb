@@ -91,7 +91,6 @@ def all_supplies_in_holidays(holiday_hash)
     #holiday_strings.capitalize!.join
     
     
-    
 
 end
 
