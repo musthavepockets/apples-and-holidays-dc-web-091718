@@ -61,7 +61,7 @@ def all_supplies_in_holidays(holiday_hash)
       end
       #season_strings.each do |s_finals|
         #(s_finals.capitalize!).join)
-    end
+    
   binding.pry
   end
   
