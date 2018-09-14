@@ -53,9 +53,11 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   
+  
+  
   #merge(other_hash){|key, oldval, newval| block} → new_hash
-  holiday_hash.merge(Hash.new){|season, value, value.string| do 
-    season.string:
+  #holiday_hash.merge(Hash.new){|season, value, value.string| do 
+    #season.string:
   end
   
   
